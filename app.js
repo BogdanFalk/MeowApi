@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
+const cors = require('cors');
 
 // Connection to MongoDB
 mongoose.connect('mongodb+srv://bogdan37falk:Erassus.123@meowtest.gtennjs.mongodb.net/?retryWrites=true&w=majority', {
@@ -15,6 +16,7 @@ mongoose.connect('mongodb+srv://bogdan37falk:Erassus.123@meowtest.gtennjs.mongod
 
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
