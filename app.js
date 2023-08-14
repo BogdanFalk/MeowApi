@@ -52,11 +52,11 @@ app.post('/login', async (req, res) => {
         const { email, password } = req.body;
         const user = await User.findOne({ email });
         if (!user) {
-            return res.status(400).send({ error: 'Login failed!' });
+            return res.status(404).send({ error: 'User Not Found!' });
         }
         const isMatch = await bcrypt.compare(password, user.password);
         if (!isMatch) {
-            return res.status(400).send({ error: 'Login failed!' });
+            return res.status(401).send({ error: 'Password is incorrect!' });
         }
         req.session.userId = user._id;
         res.send({ user });
