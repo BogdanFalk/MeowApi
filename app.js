@@ -41,8 +41,13 @@ app.post('/register', async (req, res) => {
         const user = new User(req.body);
         await user.save();
         res.status(201).send({ user });
-    } catch (error) {
-        res.status(400).send(error);
+ } catch (err) {
+        if (err.code === 11000) {
+            // This error code is for duplicate key (unique constraint violation)
+            res.status(400).send({ error: 'Email is already registered.' });
+        } else {
+            res.status(400).send(err);
+        }
     }
 });
 
@@ -52,11 +57,11 @@ app.post('/login', async (req, res) => {
         const { email, password } = req.body;
         const user = await User.findOne({ email });
         if (!user) {
-            return res.status(400).send({ error: 'Login failed!' });
+            return res.status(404).send({ error: 'User not found!' });
         }
         const isMatch = await bcrypt.compare(password, user.password);
         if (!isMatch) {
-            return res.status(400).send({ error: 'Login failed!' });
+            return res.status(401).send({ error: 'Password is incorrect!' });
         }
         req.session.userId = user._id;
         res.send({ user });
