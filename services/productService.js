@@ -7,11 +7,11 @@ const addProduct = async (productData) => {
 
 const getProducts = async (page = 1, limit = 10) => {
     const skip = (page - 1) * limit;
-    return await Product.find().skip(skip).limit(limit).exec();
+    return await Product.find().populate("user").skip(skip).limit(limit).exec();
 };
 
 const getProductById = async (id) => {
-    return await Product.findById(id);
+    return await Product.findById(id).populate("user");
 };
 
 const deleteProductById = async (id) => {
