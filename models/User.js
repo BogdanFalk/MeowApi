@@ -29,7 +29,8 @@ const userSchema = new mongoose.Schema({
             message: () => `Password should have at least one uppercase character, one number, and one special character, and be minimum 8 characters long.`
         }
     },
-    age: Number
+    age: Number,
+                                                        
 });
 
 // Hashing password before saving

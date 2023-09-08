@@ -39,18 +39,18 @@ app.use(
   })
 );
 
+const userRoutes = require("./routes/userRoutes");
+const productRoutes = require('./routes/productRoutes');
+const orderRoutes = require('./routes/orderRoutes');
+const reviewRoutes = require('./routes/reviewRoutes');
+
+// ... [connection to MongoDB and other middleware]
+
+app.use("/user", userRoutes);
+app.use("/products", productRoutes);
+app.use("/orders", orderRoutes);
+app.use('/reviews', reviewRoutes);
+
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });
-
-const productRoutes = require('./routes/productRoutes.js');
-
-app.use('/products', productRoutes);
-
-const userRoutes = require('./routes/userRoutes.js');
-
-app.use('/users', userRoutes);
-
-const reviewRoutes = require('./routes/reviewRoutes.js');
-
-app.use('/reviews', reviewRoutes);
