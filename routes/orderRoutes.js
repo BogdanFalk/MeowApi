@@ -9,12 +9,20 @@ router.get("/user/:userId/orders", async (req, res) => {
   const offset = (page - 1) * limit;
 
   try {
-    const orders = await Order.find({ buyer: userId })
+    const orders = await Order.find({ buyer: userId }, "-buyer")
       .skip(offset)
-      .limit(limit)
+      .limit(limit)      
       .exec();
 
-    res.status(200).send(orders);
+    const totalOrders = await Order.countDocuments({ buyer: userId });
+
+    res
+      .status(200)
+      .send({
+        orders,
+        totalPages: Math.ceil(totalOrders / limit),
+        currentPage: page,
+      });
   } catch (error) {
     res.status(500).send({ error: error.message });
   }
