@@ -12,7 +12,6 @@ router.get("/user/:userId/orders", async (req, res) => {
     const orders = await Order.find({ buyer: userId })
       .skip(offset)
       .limit(limit)
-      .populate("products.product") // Optional: if you want product details too.
       .exec();
 
     res.status(200).send(orders);
