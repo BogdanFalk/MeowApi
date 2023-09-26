@@ -44,6 +44,7 @@ const userRoutes = require("./routes/userRoutes");
 const productRoutes = require('./routes/productRoutes');
 const orderRoutes = require('./routes/orderRoutes');
 const reviewRoutes = require('./routes/reviewRoutes');
+const categoryRouter = require('./routes/categoryRoute');
 
 // ... [connection to MongoDB and other middleware]
 
@@ -51,6 +52,7 @@ app.use("/user", userRoutes);
 app.use("/products", productRoutes);
 app.use("/orders", orderRoutes);
 app.use('/reviews', reviewRoutes);
+app.use('/api/categories', categoryRouter);
 
 app.use(express.static(path.join(__dirname, 'build')));
 
