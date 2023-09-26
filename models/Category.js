@@ -10,10 +10,6 @@ const categorySchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Category'
     },
-    children: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Category'
-    }]
 });
 
 const Category = mongoose.model('Category', categorySchema);
