@@ -48,10 +48,10 @@ const categoryRouter = require('./routes/categoryRoute');
 
 // ... [connection to MongoDB and other middleware]
 
-app.use("/user", userRoutes);
-app.use("/products", productRoutes);
-app.use("/orders", orderRoutes);
-app.use('/reviews', reviewRoutes);
+app.use("/api/user", userRoutes);
+app.use("/api/products", productRoutes);
+app.use("/api/orders", orderRoutes);
+app.use('/api/reviews', reviewRoutes);
 app.use('/api/categories', categoryRouter);
 
 app.use(express.static(path.join(__dirname, 'build')));
