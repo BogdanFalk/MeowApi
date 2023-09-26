@@ -44,7 +44,7 @@ const userRoutes = require("./routes/userRoutes");
 const productRoutes = require('./routes/productRoutes');
 const orderRoutes = require('./routes/orderRoutes');
 const reviewRoutes = require('./routes/reviewRoutes');
-const categoryRouter = require('./routes/categoryRoute');
+const categoryRouter = require('./routes/categoryRoutes');
 
 // ... [connection to MongoDB and other middleware]
 
