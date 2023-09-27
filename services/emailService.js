@@ -1,12 +1,12 @@
 const nodemailer = require("nodemailer");
 
 const transporter = nodemailer.createTransport({
-  host: "smtp-relay.brevo.com",
+  host: "smtp.sendgrid.net",
   port: 587,
   secure: false,
   auth: {
-    user: "bogdan37falk@gmail.com",
-    pass: "7kaLcKAhFgEH9XwO",
+    user: "apikey",
+    pass: "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",
   },
 });
 
