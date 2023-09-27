@@ -53,7 +53,7 @@ router.post("/contact", async (req, res) => {
 
   const success = await sendEmail(
     "contact@e20.ro",
-    "office@e20.ro",
+    "bogdan37falk@gmail.com",
     subject,
     text,
     html
