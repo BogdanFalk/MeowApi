@@ -4,16 +4,19 @@ sgMail.setApiKey(
 );
 
 const sendEmail = async (from, to, subject, text, html) => {
-  const msg = {
-    from,
-    to,
-    subject,
-    text,
-    html,
-  };
-
-  result = await sgMail.send(msg);
-  console.log(result);
+  try {
+    const msg = {
+      from,
+      to,
+      subject,
+      text,
+      html,
+    };
+    result = await sgMail.send(msg);
+    console.log(result);
+  } catch (error) {
+    return false;
+  }
 };
 
 module.exports = {
