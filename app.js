@@ -4,6 +4,7 @@ const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const cors = require("cors");
 const path = require("path");
+require('dotenv').config()
 
 // Connection to MongoDB
 mongoose
