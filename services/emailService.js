@@ -1,5 +1,5 @@
 const sgMail = require("@sendgrid/mail");
-sgMail.setApiKey("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");
+sgMail.setApiKey("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");
 
 const sendEmail = async (from, to, subject, text, html) => {
   const msg = {
@@ -18,7 +18,7 @@ const sendEmail = async (from, to, subject, text, html) => {
         return true;
       })
       .catch((error) => {
-        throw error;
+        return false
       });
   
   } catch (error) {
