@@ -60,9 +60,9 @@ router.post("/contact", async (req, res) => {
   );
 
   if (success === false) {
-    res.status(500).json({ error: "There was an error sending the email" });
+    res.status(500).json({ error: "Oops a fost o problema la trimiterea mesajului." });
   } else {
-    res.status(200).json({ message: "Email successfully sent!" });
+    res.status(200).json({ message: "Mesaj trimis cu success!" });
   }
 });
 
