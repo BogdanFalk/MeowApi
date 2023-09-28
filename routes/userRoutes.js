@@ -53,16 +53,16 @@ router.post("/contact", async (req, res) => {
 
   const success = await sendEmail(
     "contact@e20.ro",
-    "bogdan37falk@gmail.com",
+    "sicoealexandra97@gmail.com",
     subject,
     text,
     html
   );
 
-  if (success) {
-    res.status(200).json({ message: "Email successfully sent!" });
-  } else {
+  if (success === false) {
     res.status(500).json({ error: "There was an error sending the email" });
+  } else {
+    res.status(200).json({ message: "Email successfully sent!" });
   }
 });
 

@@ -1,9 +1,9 @@
 const sgMail = require("@sendgrid/mail");
-sgMail.setApiKey("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");
+sgMail.setApiKey("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");
 
 const sendEmail = async (from, to, subject, text, html) => {
   const msg = {
-    from: from ? from : "bogdan37falk@gmail.com",
+    from,
     to,
     subject,
     text,
