@@ -1,6 +1,6 @@
 const sgMail = require("@sendgrid/mail");
 sgMail.setApiKey(
-  "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"
+  "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"
 );
 
 const sendEmail = async (from, to, subject, text, html) => {
