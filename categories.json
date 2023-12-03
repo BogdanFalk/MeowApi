@@ -1,0 +1,421 @@
+[{
+  "_id": {
+    "$oid": "6512a7933d95500408a41125"
+  },
+  "title": "Câini",
+  "icon": "fa-dog",
+  "parentId": null
+},
+{
+  "_id": {
+    "$oid": "6512a9223d95500408a41126"
+  },
+  "title": "Hrană",
+  "icon": "fa-bone",
+  "parentId": {
+    "$oid": "6512a7933d95500408a41125"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512aac33d95500408a41129"
+  },
+  "title": "Îngrijire",
+  "icon": "fa-spray-can-sparkles",
+  "parentId": {
+    "$oid": "6512a7933d95500408a41125"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512ab173d95500408a4112a"
+  },
+  "title": "Accesorii",
+  "icon": "fa-shirt",
+  "parentId": {
+    "$oid": "6512a7933d95500408a41125"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512ab6c3d95500408a4112b"
+  },
+  "title": "Câine junior",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512a9223d95500408a41126"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512ab813d95500408a4112c"
+  },
+  "title": "Câine adult",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512a9223d95500408a41126"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512ab8d3d95500408a4112d"
+  },
+  "title": "Câine senior",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512a9223d95500408a41126"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512ac5c3d95500408a4112e"
+  },
+  "title": "Antiparazitare",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512aac33d95500408a41129"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512ac913d95500408a4112f"
+  },
+  "title": "Igienă câini",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512aac33d95500408a41129"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512acb43d95500408a41130"
+  },
+  "title": "Vitamine câini",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512aac33d95500408a41129"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512acf03d95500408a41131"
+  },
+  "title": "Culcușuri",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512ab173d95500408a4112a"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512af493d95500408a41132"
+  },
+  "title": "Castroane",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512ab173d95500408a4112a"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512af693d95500408a41133"
+  },
+  "title": "Cuști și genți",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512ab173d95500408a4112a"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512afa93d95500408a41134"
+  },
+  "title": "Zgărzi, lese și hamuri",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512ab173d95500408a4112a"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b1293d95500408a41135"
+  },
+  "title": "Jucării căini",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512ab173d95500408a4112a"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b1473d95500408a41136"
+  },
+  "title": "Hăinuțe căini",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512ab173d95500408a4112a"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b17e3d95500408a41137"
+  },
+  "title": "Pisici",
+  "icon": "fa-cat",
+  "parentId": null
+},
+{
+  "_id": {
+    "$oid": "6512b1aa3d95500408a41138"
+  },
+  "title": "Hrană",
+  "icon": "fa-fish",
+  "parentId": {
+    "$oid": "6512b17e3d95500408a41137"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b1fc3d95500408a41139"
+  },
+  "title": "Îngrijire",
+  "icon": "fa-spray-can-sparkles",
+  "parentId": {
+    "$oid": "6512b17e3d95500408a41137"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b21f3d95500408a4113a"
+  },
+  "title": "Accesorii",
+  "icon": "fa-shirt",
+  "parentId": {
+    "$oid": "6512b17e3d95500408a41137"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b24c3d95500408a4113b"
+  },
+  "title": "Pisică junior",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512b1aa3d95500408a41138"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b27c3d95500408a4113c"
+  },
+  "title": "Pisică Adult",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512b1aa3d95500408a41138"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b2883d95500408a4113d"
+  },
+  "title": "Pisică Senior",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512b1aa3d95500408a41138"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b2e03d95500408a4113e"
+  },
+  "title": "Antiparazitare",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512b1fc3d95500408a41139"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b2f83d95500408a4113f"
+  },
+  "title": "Igienă",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512b1fc3d95500408a41139"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b3103d95500408a41140"
+  },
+  "title": "Vitamine pisici",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512b1fc3d95500408a41139"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b32a3d95500408a41141"
+  },
+  "title": "Așternut igienic",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512b1fc3d95500408a41139"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b34a3d95500408a41142"
+  },
+  "title": "Culcușuri",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512b21f3d95500408a4113a"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b3623d95500408a41143"
+  },
+  "title": "Litiere",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512b21f3d95500408a4113a"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b38b3d95500408a41144"
+  },
+  "title": "Zgărzi și hamuri",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512b21f3d95500408a4113a"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b3bb3d95500408a41145"
+  },
+  "title": "Jucării pisici",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512b21f3d95500408a4113a"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b4483d95500408a41146"
+  },
+  "title": "Păsări",
+  "icon": "fa-dove",
+  "parentId": null
+},
+{
+  "_id": {
+    "$oid": "6512b4673d95500408a41147"
+  },
+  "title": "Hrană",
+  "icon": "fa-worm",
+  "parentId": {
+    "$oid": "6512b4483d95500408a41146"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b5603d95500408a41148"
+  },
+  "title": "Delicii păsări",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512b4673d95500408a41147"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b5753d95500408a41149"
+  },
+  "title": "Batoane",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512b4673d95500408a41147"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b6833d95500408a4114a"
+  },
+  "title": "Accesorii",
+  "icon": "fa-feather",
+  "parentId": {
+    "$oid": "6512b4483d95500408a41146"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b6d13d95500408a4114b"
+  },
+  "title": "Colivii, cuiburi și cuști transport",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512b6833d95500408a4114a"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b6e93d95500408a4114c"
+  },
+  "title": "Nisip igienic",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512b6833d95500408a4114a"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b7063d95500408a4114d"
+  },
+  "title": "Jucării păsări",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512b6833d95500408a4114a"
+  }
+},
+{
+  "_id": {
+    "$oid": "6512b73e3d95500408a4114e"
+  },
+  "title": "Furaje păsări",
+  "icon": "no-icon",
+  "parentId": {
+    "$oid": "6512b4673d95500408a41147"
+  }
+},
+{
+  "_id": {
+    "$oid": "656b5a3c278e92ecc1463da8"
+  },
+  "title": "Antibiotice",
+  "parentId": {
+    "$oid": "656b59bf278e92ecc1463da5"
+  }
+},
+{
+  "_id": {
+    "$oid": "656b5a57278e92ecc1463da9"
+  },
+  "title": "Antibiotice",
+  "parentId": {
+    "$oid": "656b59d1278e92ecc1463da6"
+  }
+},
+{
+  "_id": {
+    "$oid": "656b5a64278e92ecc1463daa"
+  },
+  "title": "Antibiotice",
+  "parentId": {
+    "$oid": "656b59dc278e92ecc1463da7"
+  }
+}]

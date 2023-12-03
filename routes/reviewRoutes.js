@@ -45,4 +45,20 @@ router.get('/product/:productId/user/:userId', async (req, res) => {
 });
 
 
+router.get("/average/:id", async (req, res) => {
+    try {
+      const avgscore = await reviewService.getAverageScoreByProductId(
+        req.params.id
+      );
+      if (avgscore) {
+        res.status(200).send(avgscore);
+      } else {
+        res.status(404).send({ error: "Product not found" });
+      }
+    } catch (error) {
+      res.status(500).send({ error: error.message });
+    }
+  });
+
+
 module.exports = router;
