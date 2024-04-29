@@ -30,6 +30,7 @@ const userSchema = new mongoose.Schema({
         }
     },
     age: Number,
+    birthday: Date,
     prefix: {type: Number, required: true},
                                                         
 });
