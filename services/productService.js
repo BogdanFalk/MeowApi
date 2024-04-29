@@ -11,7 +11,7 @@ const getProducts = async (page = 1, limit = 10) => {
 };
 
 const getProductById = async (id) => {
-    return await Product.findById(id).populate("user");
+    return await Product.findById(id).populate("user").populate("category");
 };
 
 const deleteProductById = async (id) => {
