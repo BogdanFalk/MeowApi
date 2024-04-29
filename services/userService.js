@@ -21,7 +21,22 @@ const login = async (email, password) => {
   return user;
 };
 
+const updateUserProfile = async (userId, userData) => {
+  try {
+    const user = await User.findByIdAndUpdate(userId, userData, { new: true });
+    
+    if (!user) {
+      throw new Error("User not found.");
+    }
+
+    return user;
+  } catch (error) {
+    throw error;
+  }
+};
+
 module.exports = {
   register,
-  login
+  login,
+  updateUserProfile
 };

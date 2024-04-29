@@ -35,6 +35,15 @@ router.post("/login", async (req, res) => {
   }
 });
 
+router.put("/:id", async (req, res) => {
+  try {
+    const user = await userService.updateUserProfile(req.params.id, req.body);
+    res.status(200).send(user);
+  } catch (error) {
+    res.status(400).send({ error: error.message });
+  }
+});
+
 router.post("/contact", async (req, res) => {
   const { name, email, message } = req.body;
 

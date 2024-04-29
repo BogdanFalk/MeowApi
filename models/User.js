@@ -30,6 +30,7 @@ const userSchema = new mongoose.Schema({
         }
     },
     age: Number,
+    prefix: {type: Number, required: true},
                                                         
 });
 
@@ -37,6 +38,14 @@ const userSchema = new mongoose.Schema({
 userSchema.pre('save', async function(next) {
     if (this.isModified('password')) {
         this.password = await bcrypt.hash(this.password, 8);
+    }
+    next();
+});
+
+userSchema.pre('findOneAndUpdate', async function(next) {
+    const update = this.getUpdate();
+    if (update.password) {
+        update.password = await bcrypt.hash(update.password, 8);
     }
     next();
 });
