@@ -35,8 +35,29 @@ const updateUserProfile = async (userId, userData) => {
   }
 };
 
+const updateUserImage = async (userId, imageUrl) => {
+  try {
+    // Find the user by ID
+    const updatedUser = await User.findByIdAndUpdate(
+      userId,
+      { imageUrl },
+      { new: true, fields: { password: 0 } } // Exclude the password field from the updated document
+    );
+
+    // Check if the user exists
+    if (!updatedUser) {
+      throw new Error("User not found.");
+    }
+
+    return updatedUser;
+  } catch (error) {
+    throw error;
+  }
+};
+
 module.exports = {
   register,
   login,
-  updateUserProfile
+  updateUserProfile,
+  updateUserImage
 };

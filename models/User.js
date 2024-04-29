@@ -32,7 +32,8 @@ const userSchema = new mongoose.Schema({
     age: Number,
     birthday: Date,
     prefix: {type: Number, required: true},
-                                                        
+    phone: {type: String, required: false},
+    imageUrl: String
 });
 
 // Hashing password before saving
