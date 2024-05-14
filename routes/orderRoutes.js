@@ -13,8 +13,8 @@ router.get("/user/:userId/orders", async (req, res) => {
 
 router.get("/user/:userId/lastOrder", async (req, res) => {
   try {
-    const result = await orderService.getUserOrders(req.params.userId);
-    res.status(200).send(result[0]);
+    const result = await orderService.getUserOrders(req.params.userId);    
+    res.status(200).send(result.orders[0]);
   } catch (error) {
     res.status(500).send({ error: error.message });
   }
