@@ -1,5 +1,21 @@
 const Category = require("../models/Category");
 
+const getCategory = async (id) => {
+  try {
+    // Find the category by id
+    const category = await Category.findById(id).lean();
+    
+    if (!category) {
+      throw new Error('Category not found');
+    }
+
+    return category;
+  } catch (error) {
+    console.error('Error fetching category:', error);
+    throw error;
+  }
+};
+
 const getAllCategories = async () => {
   const categories = await Category.find().lean();
 
