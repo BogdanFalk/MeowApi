@@ -74,5 +74,6 @@ const findLeafCategories = async (parentId, leafCategories) => {
 
 module.exports = {
   getAllCategories,
-  getAllLeafCategories
+  getAllLeafCategories,
+  getCategory
 };
