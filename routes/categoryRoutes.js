@@ -11,6 +11,15 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/:id", async (req, res) => {
+  try {
+    const category = await categoryService.getCategory(req.params.id)
+    res.json(category);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+});
+
 router.get('/leaf',async (req, res) => {
   try {
     const categories = await categoryService.getAllLeafCategories();
