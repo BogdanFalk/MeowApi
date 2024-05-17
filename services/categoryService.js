@@ -3,6 +3,7 @@ const Category = require("../models/Category");
 const getCategory = async (id) => {
   try {
     // Find the category by id
+    console.log(id);
     const category = await Category.findById(id).lean();
     
     if (!category) {
