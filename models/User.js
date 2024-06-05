@@ -31,7 +31,7 @@ const userSchema = new mongoose.Schema({
     },
     age: Number,
     birthday: Date,
-    prefix: {type: Number, required: true},
+    prefix: {type: Number, required: false, default: 0},
     phone: {type: String, required: false},
     imageUrl: String
 });
